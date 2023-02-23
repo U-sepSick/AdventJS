@@ -10,3 +10,8 @@
 - Reto #15
 - Reto #16
 - Reto #17
+- Reto #20
+- Reto #21
+- Reto #22
+- Reto #23
+- Reto #24
