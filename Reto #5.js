@@ -42,8 +42,6 @@ function getMaxGifts(giftsCities, maxGifts, maxCities) {
       }
     }
 
-
-
     // intencambiar valores del Array -------------
     giftsCities.push(giftsCities[0])
     giftsCities.shift()
