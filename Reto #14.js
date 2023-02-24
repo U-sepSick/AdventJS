@@ -4,32 +4,44 @@
  * ! Solo se puede desplazar hacia abajo y en diagonal buscando el numero mas pequeño
  * 
  *        
- *         [0]
- *       /    \
- *     [0]    [1]
- *    / \     / \
- *  [0] [1] [2] [3]
+ *          [0]
+ *         /  \
+ *       [0]  [1]
+ *      /  \ /  \        
+ *    [0]  [1]  [2]   
+ * 
+ * 
  */
 
 
 function getOptimalPath(path) {
 
-  const pisos = path.length
+  // cada piso del array
+  const optimalPath = path.filter((e, i, a) => {
 
-  //solo puede seguir al siguiente array a las posiciones [0] o [1] y elegir el valor menor
-  console.log(path[1])
-  const result = Math.min(...path[1])
+    console.log(e)
+    console.log(i)
+    console.log(a)
 
-  const way = path.map((e,i,a) => {
+    // cada elemento de un piso
+    if (i <= 1) {
+      suma = parseInt(e[0])
+      console.log(suma)
+    } else {
+      suma = parseInt(e[0])
+      console.log(suma)
+    }
 
-    const res = Math.min(e)
-    
-    //Math.min(e[i])
-    return res
+    console.log(e[0])
+
+    //flat++
+    return suma
+
   })
-
-  return way
+  return optimalPath
 }
+
+// Sumas [0][0] + [0+1][0]
 
 //console.log(getOptimalPath([[0], [2, 3]]))
 // 2 // 0 -> 2
